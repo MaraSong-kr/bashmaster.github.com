@@ -14,8 +14,12 @@ $ <- 쉘 프롬프트를 뜻하며, 쉘에서 바로 실행할 수 있는 명령
 
 1. 날짜 관련 : date [상세보기](https://github.com/bash-master/bash-master.github.io/blob/master/ch.01/ch.01.data.sh)
 ```
-$ date +%Y"-"%m"-"%d" "%H":"%M":"%S
+$ date +%Y"-"%m"-"%d" "%H":"%M":"%S # 오늘날짜 
 2019-11-22 13:29:42
+$ date --date="1 days" +%Y"-"%m"-"%d" "%H":"%M":"%S # 1일뒤 (내일) 날짜
+2019-11-23 13:29:42
+$ date --date="-1 days" +%Y"-"%m"-"%d" "%H":"%M":"%S # 1일전 (어제) 날짜
+2019-11-21 13:29:42
 ```
 1. 
 
