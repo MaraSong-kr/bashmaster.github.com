@@ -9,7 +9,7 @@ $ <- 쉘 프롬프트를 뜻하며, 쉘에서 바로 실행할 수 있는 명령
 
 ----
 
-### Ch.01 시스템 관련 변수
+### Ch.01 시스템 관련 변수 [1장 목록보기](https://github.com/bash-master/bash-master.github.io/tree/master/ch.01)
 리눅스 시스템과 관련된 변수 이용방법입니다.
 
 1. 날짜 관련 : date [상세보기](https://github.com/bash-master/bash-master.github.io/blob/master/ch.01/ch.01.data.sh)
