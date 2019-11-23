@@ -55,7 +55,7 @@ $ date --date="-1 days" +%Y"-"%m"-"%d" "%H":"%M":"%S # 1일전 (어제) 날짜
 
 ### Ch.02 기본 함수 [2장 예제 파일](https://github.com/bash-master/bash-master.github.io/tree/master/ch.02)
 
-1. 꺽쇠 &gt; / &gt;&gt; : 출력 리다이렉션
+1. 꺽쇠 &gt; &#47; &gt;&gt; : 출력 리다이렉션
 
 ### Ch.03 반복 및 분기 함수 [3장 예제 파일](https://github.com/bash-master/bash-master.github.io/tree/master/ch.03)
 반복해서 작업해야 할때, 작업 대상마다 다르게 처리해야 할때 유용합니다.
