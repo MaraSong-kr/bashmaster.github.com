@@ -27,36 +27,42 @@ $ date --date="-1 days" +%Y"-"%m"-"%d" "%H":"%M":"%S # 1일전 (어제) 날짜
 1. df : 파티션별 점유하고 있는 디스크 공간 확인.
 1. dmesg : 부팅되면서 체크하는 내용 확인하기. 부팅이후 중요 메시지도 이 명령어로 확인할 수 있다.
 1. du : 디렉토리별 점유하고 있는 디스크 공간 확인.
+1. find : 파일 찾기.
 1. free : 메모리 사용량 확인.
 1. hostname : 호스트명 확인.
 1. id : 로그인 한 아이디 확인.
 1. ifconfig : 네트워크 설정 보기.
-1. lastlog : 
+1. lastlog : 마지막 시스템 로그 확인하기.
 1. lsof : 열려 있는 파일 리스트 보기.
 1. ls : 파일 리스트 보기.
 1. mount / umount : 디스크 마운트 / 언마운트.
 1. ps : 프로세스 상태 보기.
 1. route : 라우트 경로 보기.
-1. stty : 
-1. sudo : 
+1. stty : 터미널 설정하기.
+1. sudo : 실행권한 바꿔서 실행하기.
 1. top : 프로세스 상태 보기. 빠져 나올땐 Ctrl+C
-1. tty : 
-1. uname : 
-1. uptime : 
+1. tty : 접속 터미널 확인하기.
+1. uname : 리눅스 시스템의 전체 이름 확인하기.
+1. uptime : 시스템이 부팅된 날짜 확인하기.
 1. useradd / userdel : 사용자 추가 / 사용자 삭제
-1. w : 
-1. who : 
+1. w : 로그인한 유저 확인하기.
+1. who : 내 정보 확인하기.
 
 
 ### Ch.02 문자열, 텍스트 파일 관련 함수 [2장 예제 파일](https://github.com/bash-master/bash-master.github.io/tree/master/ch.02)
 
-1. &gt; / &gt;&gt; : 출력 리다이렉션. 꺽쇠 한개 또는 두개.
-1. awk : 
-1. cat : 
-1. cut : 
-1. head : 
-1. sed : 
-1. tail : 
+1. &gt; / &gt;&gt; : 입/출력 리다이렉션. 꺽쇠 한개 또는 두개.
+```
+$ echo "123" > test.txt # 출력 결과를 test.txt 파일로 보내기.
+$ mysql -uroot -p testdb < test.sql # test.sql 파일에 저장된 내용을 mysql 실행파일의 입력값으로 보내기.
+```
+1. awk : 문자열 자르기.
+1. cat : 파일 내용 출력.
+1. cut : 문자열 자르기.
+1. grep : 원하는 문자열 찾기. 문자열 검색.
+1. head : 파일의 맨 위에 있는 문자열 출력하기.
+1. sed : 원하는 문자열을 찾아서 대체하기. 문자열 바꾸기.
+1. tail : 파일의 맨 아래에 있는 문자열 출력하기.
 
 
 ### Ch.03 반복 및 분기 함수 [3장 예제 파일](https://github.com/bash-master/bash-master.github.io/tree/master/ch.03)
