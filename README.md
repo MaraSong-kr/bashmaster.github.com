@@ -13,9 +13,9 @@ $ <- 쉘 프롬프트를 뜻하며, 쉘에서 바로 실행할 수 있는 명령
 ### Ch.01 시스템 관련 기본 명령어 [1장 예제 파일](https://github.com/bash-master/bash-master.github.io/tree/master/ch.01)
 리눅스 시스템과 관련된 기본적인 명령어, 변수 안내입니다.
 
-1. chmod : 파일 권한 변경
-1. chown : 파일 소유권 변경
-1. date : 날짜 관련 [상세보기](https://github.com/bash-master/bash-master.github.io/blob/master/ch.01/ch.01.data.sh)
+1. chmod : 파일 권한 변경.
+1. chown : 파일 소유자 변경.
+1. date : 날짜 관련 명령어. [상세보기](https://github.com/bash-master/bash-master.github.io/blob/master/ch.01/ch.01.data.sh)
 ```
 $ date +%Y"-"%m"-"%d" "%H":"%M":"%S # 오늘날짜 
 2019-11-22 13:29:42
