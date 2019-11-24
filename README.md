@@ -54,7 +54,7 @@ $ date --date="-1 days" +%Y"-"%m"-"%d" "%H":"%M":"%S # 1일전 (어제) 날짜
 1. &gt; / &gt;&gt; : 입/출력 리다이렉션. 꺽쇠 한개 또는 두개.
 ```
 $ echo "123" > test.txt # 출력 결과를 test.txt 파일로 보내기.
-$ mysql -uroot -p testdb < test.sql # test.sql 파일에 저장된 내용을 mysql 실행파일의 입력값으로 보내기.
+$ mysql -uroot -p testdb < test.sql # test.sql 파일 내용을 mysql 실행파일의 입력값으로 보내기.
 ```
 1. awk : 문자열 자르기.
 1. cat : 파일 내용 출력.
