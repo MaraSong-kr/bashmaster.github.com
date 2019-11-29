@@ -26,7 +26,7 @@ $ date --date="-1 days" +%Y"-"%m"-"%d" "%H":"%M":"%S # 1일전 (어제) 날짜
 ```
 1. df : 파티션별 점유하고 있는 디스크 공간 확인.
 ```
-# df -h
+$ df -h
 Filesystem      Size  Used Avail Use% Mounted on
 udev            488M     0  488M   0% /dev
 tmpfs           100M   11M   89M  11% /run
@@ -42,7 +42,7 @@ tmpfs           100M   11M   89M  11% /run
 1. find : 파일 찾기.
 1. free : 메모리 사용량 확인.
 ```
-# free -m # 옵션 m = MB 메가단위
+$ free -m # 옵션 m = MB 메가단위
               total        used        free      shared  buff/cache   available
 Mem:            990         320          92          15         577         472
 Swap:          2047         204        1843
@@ -56,7 +56,7 @@ Swap:          2047         204        1843
 1. mount / umount : 디스크 마운트 / 언마운트.
 1. ps : 프로세스 상태 보기.
 ```
-# ps -axlf
+$ ps -axlf
 F   UID   PID  PPID PRI  NI    VSZ   RSS WCHAN  STAT TTY        TIME COMMAND
 1     0     2     0  20   0      0     0 kthrea S    ?          0:05 [kthreadd]
 1     0     3     2   0 -20      0     0 rescue I<   ?          0:00  \_ [rcu_gp]
@@ -69,8 +69,7 @@ F   UID   PID  PPID PRI  NI    VSZ   RSS WCHAN  STAT TTY        TIME COMMAND
 4     0   828     1  20   0  37404  1924 poll_s Ssl  ?          0:00 /usr/sbin/lightdm
 4     0   861   828  20   0 145828  4420 epoll_ Ssl+ tty7      54:18  \_ /usr/lib/xorg/Xorg :0 -seat seat0 -auth
 4     0  1036   828  20   0  29604  1076 wait   Sl   ?          0:00  \_ lightdm --session-child 14 17
-
-# ps -elf
+$ ps -elf
 ```
 1. route : 라우트 경로 보기.
 1. stty : 터미널 설정하기.
@@ -79,16 +78,16 @@ F   UID   PID  PPID PRI  NI    VSZ   RSS WCHAN  STAT TTY        TIME COMMAND
 1. tty : 접속 터미널 확인하기.
 1. uname : 리눅스 시스템 이름 확인하기.
 ```
-# uname
+$ uname
 Linux
-# uname -a
+$ uname -a
 Linux raspberrypi #1245 SMP Fri Jul 12 17:25:51 BST 2019 armv7l GNU/Linux
 ```
 1. uptime : 시스템이 부팅된 날짜 확인하기.
 1. useradd / userdel : 사용자 추가 / 사용자 삭제
 1. w : 로그인한 유저 확인하기.
 ```
-# w
+$ w
  11:16:55 up 51 days, 19:52,  2 users,  load average: 0.21, 0.23, 0.26
 USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
 pi       tty7     :0               08Oct19 52days 54:18  18.84s /usr/bin/lxsession -s LXDE-pi -e LXDE
@@ -96,7 +95,7 @@ pi       pts/0    192.168.1.88     11:16    0.00s  0.67s  0.23s sshd: pi [priv]
 ```
 1. who : 로그인한 유저 확인하기 2.
 ```
-# who
+$ who
 pi       tty7         2019-10-08 15:26 (:0)
 pi       pts/0        2019-11-29 11:16 (192.168.11.12)
 ```
