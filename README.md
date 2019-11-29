@@ -100,6 +100,7 @@ pi       tty7         2019-10-08 15:26 (:0)
 pi       pts/0        2019-11-29 11:16 (192.168.11.12)
 ```
 
+----
 
 ### Ch.02 문자열, 텍스트 파일 관련 함수 [2장 예제 파일](https://github.com/bash-master/bash-master.github.io/tree/master/ch.02)
 
@@ -125,6 +126,7 @@ $ mysql -uroot -p testdb < test.sql # test.sql 파일 내용을 mysql 실행파�
 1. 반복 : while
 1. 분기 : case
 
+----
 
 ### Ch.04 시스템 상태 확인 CLI 프로그램 [4장 예제 파일](https://github.com/bash-master/bash-master.github.io/tree/master/ch.04)
 
@@ -137,6 +139,7 @@ $ mysql -uroot -p testdb < test.sql # test.sql 파일 내용을 mysql 실행파�
 1. sysv-rc-conf : 
 1. tcpdump : 
 
+----
 
 ### Ch.05 많이 쓰는 쉘 커멘드라인 CLI 프로그램 [5장 예제 파일](https://github.com/bash-master/bash-master.github.io/tree/master/ch.05)
 유용해서 자주 사용하는 쉘 커멘드라인 프로그램 안내입니다.
