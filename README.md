@@ -25,10 +25,28 @@ $ date --date="-1 days" +%Y"-"%m"-"%d" "%H":"%M":"%S # 1일전 (어제) 날짜
 2019-11-21 13:29:42
 ```
 1. df : 파티션별 점유하고 있는 디스크 공간 확인.
+```
+# df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            488M     0  488M   0% /dev
+tmpfs           100M   11M   89M  11% /run
+/dev/xvda1      7.7G  5.9G  1.9G  76% /
+/dev/xvdf        99G   76G   18G  82% /data
+```
 1. dmesg : 부팅되면서 체크하는 내용 확인하기. 부팅이후 중요 메시지도 이 명령어로 확인할 수 있다.
 1. du : 디렉토리별 점유하고 있는 디스크 공간 확인.
+```
+~/data# du -sh # 현재 디렉토리 사용공간 확인.
+216K    .
+```
 1. find : 파일 찾기.
 1. free : 메모리 사용량 확인.
+```
+# free -m # 옵션 m = MB 메가단위
+              total        used        free      shared  buff/cache   available
+Mem:            990         320          92          15         577         472
+Swap:          2047         204        1843
+```
 1. hostname : 호스트명 확인.
 1. id : 로그인 한 아이디 확인.
 1. ifconfig : 네트워크 설정 보기.
@@ -37,16 +55,51 @@ $ date --date="-1 days" +%Y"-"%m"-"%d" "%H":"%M":"%S # 1일전 (어제) 날짜
 1. ls : 파일 리스트 보기.
 1. mount / umount : 디스크 마운트 / 언마운트.
 1. ps : 프로세스 상태 보기.
+```
+# ps -axlf
+F   UID   PID  PPID PRI  NI    VSZ   RSS WCHAN  STAT TTY        TIME COMMAND
+1     0     2     0  20   0      0     0 kthrea S    ?          0:05 [kthreadd]
+1     0     3     2   0 -20      0     0 rescue I<   ?          0:00  \_ [rcu_gp]
+4     0   818     1  20   0   5688   444 poll_s Ss   ?          0:00 /usr/bin/vncserver-x11-serviced -fg
+4     0   834   818  20   0  39716  5024 poll_s Sl   ?         18:48  \_ /usr/bin/vncserver-x11-core -service
+4     0   819     1  20   0 130452  1736 epoll_ Ss   ?          6:04 php-fpm: master process (/etc/php/7.0/fpm/php-fpm.conf)
+5    33   860   819  20   0 141256 12648 skb_wa S    ?          2:07  \_ php-fpm: pool www
+5    33  2790   819  20   0 141236 10596 skb_wa S    ?          1:49  \_ php-fpm: pool www
+5    33 26647   819  20   0 130968 10428 skb_wa S    ?          0:50  \_ php-fpm: pool www
+4     0   828     1  20   0  37404  1924 poll_s Ssl  ?          0:00 /usr/sbin/lightdm
+4     0   861   828  20   0 145828  4420 epoll_ Ssl+ tty7      54:18  \_ /usr/lib/xorg/Xorg :0 -seat seat0 -auth
+4     0  1036   828  20   0  29604  1076 wait   Sl   ?          0:00  \_ lightdm --session-child 14 17
+
+# ps -elf
+```
 1. route : 라우트 경로 보기.
 1. stty : 터미널 설정하기.
 1. sudo : 실행권한 바꿔서 실행하기.
 1. top : 프로세스 상태 보기. 빠져 나올땐 Ctrl+C
 1. tty : 접속 터미널 확인하기.
-1. uname : 리눅스 시스템의 전체 이름 확인하기.
+1. uname : 리눅스 시스템 이름 확인하기.
+```
+# uname
+Linux
+# uname -a
+Linux raspberrypi #1245 SMP Fri Jul 12 17:25:51 BST 2019 armv7l GNU/Linux
+```
 1. uptime : 시스템이 부팅된 날짜 확인하기.
 1. useradd / userdel : 사용자 추가 / 사용자 삭제
 1. w : 로그인한 유저 확인하기.
-1. who : 내 정보 확인하기.
+```
+# w
+ 11:16:55 up 51 days, 19:52,  2 users,  load average: 0.21, 0.23, 0.26
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+pi       tty7     :0               08Oct19 52days 54:18  18.84s /usr/bin/lxsession -s LXDE-pi -e LXDE
+pi       pts/0    192.168.1.88     11:16    0.00s  0.67s  0.23s sshd: pi [priv] 
+```
+1. who : 로그인한 유저 확인하기 2.
+```
+# who
+pi       tty7         2019-10-08 15:26 (:0)
+pi       pts/0        2019-11-29 11:16 (192.168.11.12)
+```
 
 
 ### Ch.02 문자열, 텍스트 파일 관련 함수 [2장 예제 파일](https://github.com/bash-master/bash-master.github.io/tree/master/ch.02)
