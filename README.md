@@ -91,7 +91,7 @@ $ w
  11:16:55 up 51 days, 19:52,  2 users,  load average: 0.21, 0.23, 0.26
 USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
 pi       tty7     :0               08Oct19 52days 54:18  18.84s /usr/bin/lxsession -s LXDE-pi -e LXDE
-pi       pts/0    192.168.1.88     11:16    0.00s  0.67s  0.23s sshd: pi [priv] 
+pi       pts/0    192.168.11.12    11:16    0.00s  0.67s  0.23s sshd: pi [priv] 
 ```
 1. who : 로그인한 유저 확인하기 2.
 ```
