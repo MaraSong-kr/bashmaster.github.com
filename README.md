@@ -14,7 +14,21 @@ $ <- 쉘 프롬프트를 뜻하며, 쉘에서 바로 실행할 수 있는 명령
 리눅스 시스템과 관련된 기본적인 명령어, 변수 안내입니다.
 
 1. chmod : 파일 권한 변경.
+```
+파일은 기본적으로 읽기, 쓰기, 실행하기 - 이렇게 권한이 있는데 각각 숫자로 4, 2, 1 이라는 숫자가 부여되어 있습니다.
+읽기+쓰기+실행 = 7
+읽기+쓰기 = 6
+쓰기+실행 = 3
+권한은 u:user, g:group, o:other, a:all 에게 지정할 수 있습니다.
+$ chmod ug+rw data.file # data.file 에 user 소유자와 group 그룹에게 read, write 권한을 부여.
+$ chmod ug-x data.file # data.file 에 user 소유자와 group 그룹에게 execute 실행 권한을 제거.
+$ chmod 644 data.file # 소유자는 읽기+쓰기, 그룹은 읽기, 그외에 사용자도 읽기 권한 부여.
+```
 1. chown : 파일 소유자 변경.
+```
+$ chown marasong. data.file # data.file 의 소유자는 marasong 으로, 그룹은 marasong 이 속한 그룹으로 소유권 변경.
+$ chown marasong.admin data.file # data.file 의 소유자는 marasong 으로, 그룹은 admin 그룹으로 소유권 변경.
+```
 1. date : 날짜 관련 명령어. [상세보기](https://github.com/bash-master/bash-master.github.io/blob/master/ch.01/ch.01.data.sh)
 ```
 $ date +%Y"-"%m"-"%d" "%H":"%M":"%S # 오늘날짜 
@@ -48,11 +62,23 @@ Mem:            990         320          92          15         577         472
 Swap:          2047         204        1843
 ```
 1. hostname : 호스트명 확인.
+```
+$ hostname # 호스트이름 확인.
+# hostnamectl set-hostname MyHostName # 호스트이름 변경. 루트로 작업.
+```
 1. id : 로그인 한 아이디 확인.
 1. ifconfig : 네트워크 설정 보기.
 1. lastlog : 마지막 시스템 로그 확인하기.
 1. lsof : 열려 있는 파일 리스트 보기.
+```
+$ lsof -p PID # PID 에 해당하는 프로세스가 현재 오픈하고 있는 파일 리스트.
+```
 1. ls : 파일 리스트 보기.
+```
+$ ls -al # 파일 자세히 보기, 숨김파일까지 보기.
+$ ls -alrt # 수정된 날짜 오름차순 정렬.
+$ ls -alSr # 파일 크기 오름차순 정렬.
+```
 1. mount / umount : 디스크 마운트 / 언마운트.
 1. ps : 프로세스 상태 보기.
 ```
