@@ -68,10 +68,14 @@ $ hostname # 호스트이름 확인.
 ```
 1. id : 로그인 한 아이디 확인.
 1. ifconfig : 네트워크 설정 보기.
-1. lastlog : 마지막 시스템 로그 확인하기.
+```
+$ ifconfig 
+$ ifconfig -a 
+```
+1. lastlog : 마지막 로그인 시각 확인하기.
 1. lsof : 열려 있는 파일 리스트 보기.
 ```
-$ lsof -p PID # PID 에 해당하는 프로세스가 현재 오픈하고 있는 파일 리스트.
+$ lsof -p [PID] # PID 에 해당하는 프로세스가 현재 오픈하고 있는 파일 리스트.
 ```
 1. ls : 파일 리스트 보기.
 ```
@@ -98,6 +102,9 @@ F   UID   PID  PPID PRI  NI    VSZ   RSS WCHAN  STAT TTY        TIME COMMAND
 $ ps -elf
 ```
 1. route : 라우트 경로 보기.
+```
+$ route -n
+```
 1. stty : 터미널 설정하기.
 1. sudo : 실행권한 바꿔서 실행하기.
 1. top : 프로세스 상태 보기. 빠져 나올땐 Ctrl+C
@@ -148,6 +155,13 @@ $ mysql -uroot -p testdb < test.sql # test.sql 파일 내용을 mysql 실행파�
 반복해서 작업해야 할때, 작업 대상마다 다르게 처리해야 할때 유용합니다.
 
 1. 조건 : if then...else...
+```
+if [ -z ${WORK_FILE} ]
+then
+        echo "Work File is NULL. exit."
+        exit
+fi
+```
 1. 반복 : for
 1. 반복 : while
 1. 분기 : case
