@@ -228,13 +228,45 @@ esac
 ### Ch.04 시스템 상태 확인 CLI 프로그램 [4장 예제 파일](https://github.com/bash-master/bash-master.github.io/tree/master/ch.04)
 
 1. chkconfig : 
-1. iostat : 
-1. mpstat :
-1. netstat : 
-1. vmstat : 
+1. iostat : 디스크 관련 사용량 보기.
+```
+$ iostat 1 3
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          30.11    0.00    6.45    0.00    1.08   62.37
+
+Device:            tps    kB_read/s    kB_wrtn/s    kB_read    kB_wrtn
+loop0             0.00         0.00         0.00          0          0
+xvda              1.08         0.00         4.30          0          4
+xvdf              0.00         0.00         0.00          0          0
+```
+1. mpstat : 프로세스 관련 사용량 보기.
+```
+$ mpstat 1 3
+05:45:01 AM  CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+05:45:02 AM  all   31.31    0.00   14.14    0.00    0.00    0.00    0.00    0.00    0.00   54.55
+05:45:03 AM  all   67.71    0.00   20.83    0.00    0.00    1.04    0.00    0.00    0.00   10.42
+05:45:04 AM  all   32.98    0.00   10.64    1.06    0.00    0.00    0.00    0.00    0.00   55.32
+Average:     all   43.94    0.00   15.22    0.35    0.00    0.35    0.00    0.00    0.00   40.14
+```
+1. netstat : 네트워크 정보 보기.
+```
+$ netstat -anlp | grep LISTEN
+```
+1. vmstat : 가상 메모리 관련 정보 보기.
+```
+$ vmstat 1 3
+procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
+ 0  0 291072 104380  63312 472128    1    1    24   142    0    1  2  1 97  0  0
+ 0  0 291072 104396  63312 472152    0    0     0   204   94  127  0  0 99  0  1
+ 0  0 291072 104008  63312 472156    0    0     0    32  113  147  1  0 99  0  0
+ ```
 1. strace : 
 1. sysv-rc-conf : 
-1. tcpdump : 
+1. tcpdump : 패킷 캡처 프로그램.
+```
+# tcpdump port 22 -nnn
+```
 
 ----
 
