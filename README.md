@@ -233,7 +233,6 @@ esac
 $ iostat 1 3
 avg-cpu:  %user   %nice %system %iowait  %steal   %idle
           30.11    0.00    6.45    0.00    1.08   62.37
-
 Device:            tps    kB_read/s    kB_wrtn/s    kB_read    kB_wrtn
 loop0             0.00         0.00         0.00          0          0
 xvda              1.08         0.00         4.30          0          4
