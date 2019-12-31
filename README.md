@@ -184,8 +184,44 @@ then
 fi
 ```
 1. 반복 : for
+```
+for i in `seq 1 1 10`
+do
+	echo "${i}"
+done
+```
 1. 반복 : while
+```
+END_COUNT=10
+WORK_COUNT=0
+while [ ${WORK_COUNT} -le ${END_COUNT} ]
+do
+    echo ${WORK_COUNT}
+	let WORK_COUNT=WORK_COUNT+1
+done
+```
 1. 분기 : case
+```
+phone_num=$1
+case ${phone_num} in
+	01021118988)
+		echo "와, 저하고 핸드폰번호가 같네요~"
+		;;
+	011???????|011????????)
+		echo "011 번호를 아직도 쓰시네요~"
+		;;
+	012???????|012????????)
+		echo "012 는 삐삐번호였다가 사물지능통신 M2M 으로 부여된 번호입니다.
+		echo "차량이나 카드 결제기에 부여될 수 있습니다. 핸드폰번호가 아니에요."
+		;;
+	013???????|013????????)
+		echo "013 은 수신전용입니다."
+		;;
+	*)
+		echo "핸드폰 번호를 넣어주세요"
+		exit 1
+esac
+```
 
 ----
 
