@@ -265,7 +265,7 @@ procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
 1. sysv-rc-conf : 
 1. tcpdump : 패킷 캡처 프로그램.
 ```
-# tcpdump port 22 -nnn
+$ tcpdump port 22 -nnn
 ```
 
 ----
