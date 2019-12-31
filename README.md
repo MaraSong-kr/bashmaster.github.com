@@ -252,7 +252,7 @@ Average:     all   43.94    0.00   15.22    0.35    0.00    0.35    0.00    0.00
 ```
 $ netstat -anlp | grep LISTEN
 ```
-1. vmstat : 가상 메모리 관련 정보 보기.
+1. vmstat : 가상 메모리 관련 사용량 보기.
 ```
 $ vmstat 1 3
 procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
