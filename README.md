@@ -281,4 +281,5 @@ $ tcpdump port 22 -nnn
 QnA : 묻고 답하기 : [다음카페 배쉬마스터](http://cafe.daum.net/bashmaster/qm9n)  
 여기에 사용된 모든 예제 파일에 대한 권리는 본 사이트 관리자에게 있습니다.  
 예제 파일 : 개인 용도 사용 가능, 상업적 사용 불가능.
+참고 사이트 : https://wiki.kldp.org/HOWTO/html/Adv-Bash-Scr-HOWTO/comparison-ops.html
 
