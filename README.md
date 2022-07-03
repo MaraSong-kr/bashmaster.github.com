@@ -10,7 +10,7 @@ $ <- 쉘 프롬프트를 뜻하며, 쉘에서 바로 실행할 수 있는 명령
 
 ----
 
-### Ch.01 시스템 관련 기본 명령어 [1장 예제 파일](https://github.com/bash-master/bash-master.github.io/tree/master/ch.01)
+### Ch.01 시스템 관련 기본 명령어 [1장 예제 파일](https://github.com/marasong/bashmaster.github.io/tree/master/ch.01)
 리눅스 시스템과 관련된 기본적인 명령어, 변수 안내입니다.
 
 1. chmod : 파일 권한 변경.
@@ -29,7 +29,7 @@ $ chmod 644 data.file # 소유자는 읽기+쓰기, 그룹은 읽기, 그외에 
 $ chown marasong. data.file # data.file 의 소유자는 marasong 으로, 그룹은 marasong 이 속한 그룹으로 소유권 변경.
 $ chown marasong.admin data.file # data.file 의 소유자는 marasong 으로, 그룹은 admin 그룹으로 소유권 변경.
 ```
-1. date : 날짜 관련 명령어. [상세보기](https://github.com/bash-master/bash-master.github.io/blob/master/ch.01/ch.01.data.sh)
+1. date : 날짜 관련 명령어. [상세보기](https://github.com/marasong/bashmaster.github.io/blob/master/ch.01/ch.01.data.sh)
 ```
 $ date +%Y"-"%m"-"%d" "%H":"%M":"%S # 오늘날짜 
 2019-11-22 13:29:42
@@ -137,7 +137,7 @@ pi       pts/0        2019-11-29 11:16 (192.168.11.12)
 
 ----
 
-### Ch.02 문자열, 텍스트 파일 관련 함수 [2장 예제 파일](https://github.com/bash-master/bash-master.github.io/tree/master/ch.02)
+### Ch.02 문자열, 텍스트 파일 관련 함수 [2장 예제 파일](https://github.com/marasong/bashmaster.github.io/tree/master/ch.02)
 
 1. &gt; / &gt;&gt; : 입/출력 리다이렉션. 꺽쇠 한개 또는 두개.
 ```
@@ -172,7 +172,7 @@ $ grep -iwR abc *.txt # 대소문자 구분없이 abc 단어를 하위 디렉토
 1. tail : 파일의 맨 아래에 있는 문자열 출력하기.
 
 
-### Ch.03 반복 및 분기 함수 [3장 예제 파일](https://github.com/bash-master/bash-master.github.io/tree/master/ch.03)
+### Ch.03 반복 및 분기 함수 [3장 예제 파일](https://github.com/marasong/bashmaster.github.io/tree/master/ch.03)
 반복해서 작업해야 할때, 작업 대상마다 다르게 처리해야 할때 유용합니다.
 
 1. 조건 : if then...else...
@@ -225,7 +225,7 @@ esac
 
 ----
 
-### Ch.04 시스템 상태 확인 CLI 프로그램 [4장 예제 파일](https://github.com/bash-master/bash-master.github.io/tree/master/ch.04)
+### Ch.04 시스템 상태 확인 CLI 프로그램 [4장 예제 파일](https://github.com/marasong/bashmaster.github.io/tree/master/ch.04)
 
 1. chkconfig : 
 1. iostat : 디스크 관련 사용량 보기.
@@ -269,7 +269,7 @@ $ tcpdump port 22 -nnn
 
 ----
 
-### Ch.05 많이 쓰는 쉘 커멘드라인 CLI 프로그램 [5장 예제 파일](https://github.com/bash-master/bash-master.github.io/tree/master/ch.05)
+### Ch.05 많이 쓰는 쉘 커멘드라인 CLI 프로그램 [5장 예제 파일](https://github.com/marasong/bashmaster.github.io/tree/master/ch.05)
 유용해서 자주 사용하는 쉘 커멘드라인 프로그램 안내입니다.
 
 1. 웹 호출 : curl
